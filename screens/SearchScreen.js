@@ -50,7 +50,6 @@ export default class Searchscreen extends React.Component {
           <Text style={styles.displayText}>
             {hasCameraPermission === true ? this.state.scannedData : 'request camer permission' }
           </Text>     
-          {/* <img src="https://cdn.dribbble.com/users/1501052/screenshots/4545496/finding-signatures.gif" /> */}
           <TouchableOpacity
             onPress={this.getCameraPermissions}
             style={styles.scanButton}>

@@ -10,18 +10,6 @@ import { TextInput } from 'react-native-gesture-handler';
 const TabNavigator = createBottomTabNavigator({
   Transation:{screen:BookTran},
   Search:{screen:SearchScreen},
-},{
-  defaultNavigationOptions: ({navigation}) => {
-    tabBarIcon: ({})=>{
-      const routeName = navigation.state.routeName 
-      if(routeName === 'Transaction'){ 
-        return(<Image source= {require('https://i.pinimg.com/originals/d9/4a/49/d94a495eca526d82ebbe0640aea413a9.jpg')} 
-        style={{width:30,height:30}}/>) 
-      } else if(routeName === 'Search'){ 
-        return(<Image source= {require('https://i.pinimg.com/originals/d9/4a/49/d94a495eca526d82ebbe0640aea413a9.jpg)')} 
-        style={{width:30,height:30}}/>) }
-    }
-  }
 });
 
 const AppContainer = createAppContainer(TabNavigator);

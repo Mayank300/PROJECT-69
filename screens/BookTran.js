@@ -20,13 +20,8 @@ const styles = StyleSheet.create({
   },
   displayText:{
     fontSize: 40,
-    marginTop: 100,
-    marginLeft: 700,
-    width:500,
+    justifyContent: 'center',
     textAlign: 'center',
-    borderColor: 'black',
-    borderWidth: 5,
-    borderRadius : 12,
   },
   displayText2:{
     fontSize: 30,
