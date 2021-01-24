@@ -2,13 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-import BookTran from './screens/BookTran'
+import TransactionScreen from './screens/TransactionScreen'
 import SearchScreen from './screens/SearchScreen'
 import { render } from 'react-dom';
 import { TextInput } from 'react-native-gesture-handler';
 
 const TabNavigator = createBottomTabNavigator({
-  Transation:{screen:BookTran},
+  Transation:{screen:TransactionScreen},
   Search:{screen:SearchScreen},
 });
 
